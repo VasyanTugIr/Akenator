@@ -117,8 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="чр" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\чр.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="richTextBox1.Text" xml:space="preserve">
+    <value>Привет! Давай ты загадаешь один из танков, а я его угадаю! Тебе просто нужно будет ответить на несколько вопросов...
+Итак, выбери танк:
+1. ису 152
+2. су100
+3. су78И
+4. об.260
+5. т22ср
+6.лт432
+7.кв2
+И нажми на кнопку "Начать игру".</value>
   </data>
 </root>
