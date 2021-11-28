@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox1.Text" xml:space="preserve">
+  <data name="Question.Text" xml:space="preserve">
     <value>Привет! Давай ты загадаешь один из танков, а я его угадаю! Тебе просто нужно будет ответить на несколько вопросов...
 Итак, выбери танк:
 1. ису 152
