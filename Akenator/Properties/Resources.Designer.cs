@@ -63,6 +63,16 @@ namespace Akenator.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Su76_nn {
+            get {
+                object obj = ResourceManager.GetObject("Su76_nn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap чр {
             get {
                 object obj = ResourceManager.GetObject("чр", resourceCulture);
