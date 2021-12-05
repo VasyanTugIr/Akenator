@@ -20,7 +20,7 @@ namespace Akenator
             label1.Visible = false;
         }
         int step = 0;
-        void game() 
+        void game()
         {
             if (step == 0)
             {
@@ -75,27 +75,90 @@ namespace Akenator
                     pictureBox1.Visible = true;
                     answer.Visible = false;
                     label1.Visible = false;
-                    pictureBox1.Image = Properties.Resources.Su76_nn;
+                    pictureBox1.Image = Properties.Resources.isy152;
                     step = 7;
                     button1.Text = "Сыграть еще раз";
                 }
-                else if(answer.Text.ToLower() == "нет")
+                else if (answer.Text.ToLower() == "нет")
                 {
                     Question.Text = "Это су 100";
                     pictureBox1.Visible = true;
                     answer.Visible = false;
                     label1.Visible = false;
-                    pictureBox1.Image = Properties.Resources.Su76_nn;
+                    pictureBox1.Image = Properties.Resources.cy100;
                     step = 7;
                     button1.Text = "Сыграть еще раз";
                 }
             }
+            else if (step == 4)
+            {
+                if (answer.Text.ToLower() == "да")
+                {
+                    Question.Text = "Этот танк выше седьмого уровня?";
+                    step = 5;
+                }
+                else if (answer.Text.ToLower() == "нет")
+                {
+                    Question.Text = "Это легкий танк?";
+                    step = 6;
+                }
+            }
+
+            else if (step == 5)
+            {
+                if (answer.Text.ToLower() == "да")
+                {
+                    Question.Text = "Это объект 260";
+                    pictureBox1.Visible = true;
+                    answer.Visible = false;
+                    label1.Visible = false;
+                    pictureBox1.Image = Properties.Resources.ob260;
+                    step = 7;
+                    button1.Text = "Сыграть еще раз";
+                }
+                else if (answer.Text.ToLower() == "нет")
+                {
+                    Question.Text = "Это кв 2";
+                    pictureBox1.Visible = true;
+                    answer.Visible = false;
+                    label1.Visible = false;
+                    pictureBox1.Image = Properties.Resources.kv2;
+                    step = 7;
+                    button1.Text = "Сыграть еще раз";
+                }
+
+
+            }
+            else if (step == 6)
+            {
+                if (answer.Text.ToLower() == "да")
+                {
+                    Question.Text = "Это лт432";
+                    pictureBox1.Visible = true;
+                    answer.Visible = false;
+                    label1.Visible = false;
+                    pictureBox1.Image = Properties.Resources.lt432;
+                    step = 7;
+                    button1.Text = "Сыграть еще раз";
+                }
+                else if (answer.Text.ToLower() == "нет")
+                {
+                    Question.Text = "Это т22ср";
+                    pictureBox1.Visible = true;
+                    answer.Visible = false;
+                    label1.Visible = false;
+                    pictureBox1.Image = Properties.Resources.t22cr;
+                    step = 7;
+                    button1.Text = "Сыграть еще раз";
+                }
+            }
+
             if (step == 7)
             {
                 step = 0;
-                
+
             }
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -111,6 +174,30 @@ namespace Akenator
         private void button1_Click(object sender, EventArgs e)
         {
             game();
+        }
+
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                game();
+            }
+        }
+
+        private void answer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                game();
+            }
+        }
+
+        private void button1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                game();
+            }
         }
     }
 }
